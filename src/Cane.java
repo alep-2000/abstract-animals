@@ -1,5 +1,5 @@
 
-public class Cane extends Animale{
+public class Cane extends Animale implements INuotante{
 
 	@Override
 	public void verso() {
@@ -11,6 +11,12 @@ public class Cane extends Animale{
 	public void mangia() {
 		// TODO Auto-generated method stub
 		System.out.println("Crocchette");
+	}
+
+	@Override
+	public void nuota() {
+		System.out.println("Sto nuotandooo!!!");
+		
 	}
 
 }

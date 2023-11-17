@@ -1,5 +1,5 @@
 
-public class Acquila extends Animale{
+public class Acquila extends Animale implements IVolante{
 
 	@Override
 	public void verso() {
@@ -11,6 +11,11 @@ public class Acquila extends Animale{
 	public void mangia() {
 		System.out.println("Cadaveri");
 		
+	}
+
+	@Override
+	public void vola() {
+		System.out.println("Sto volando!!!");
 	}
 
 }
