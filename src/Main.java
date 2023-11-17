@@ -19,6 +19,26 @@ public class Main {
 			System.out.println("----------------------------------");
 		}
 		
+		IVolante[] volanti = {p,a};
+		INuotante[]nuotanti = {c, d};
 		
+		for(int i=0; i<volanti.length; i++) {
+			IVolante volante = volanti[i];
+			faiVolare(volante);
+		}
+		
+		for(int i=0; i<nuotanti.length; i++) {
+			INuotante nuotante = nuotanti[i];
+			faiNuotare(nuotante);
+		}
+	
+	}
+	
+	public static void faiVolare(IVolante volante) {
+		volante.vola();
+	}
+	
+	public static void faiNuotare(INuotante nuotante) {
+		nuotante.nuota();
 	}
 }
